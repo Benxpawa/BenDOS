@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" width="device-width" initial-scale="1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>BenDOS Console</title>
+</head>
+
+<body>
+  <div class="dos-console">
+    <div class="console-header">
+      <span class="console-title">BenDOS</span>
+      <div class="console-controls">
+        <span class="control-close red"></span>
+        <span class="control-minimize yellow"></span>
+        <span class="control-maximize green"></span>
+      </div>
+    </div>
+    <div class="console-body">
+      <div class="console-output">
+        <p id="msg">C:\Users\YourUser>dir</p>
+      </div>
+      <div class="console-input">
+        <input type="text" placeholder="在此输入命令..." id="command-input">
+        <button id="enter-button">Enter</button>
+      </div>
+    </div>
+  </div>
+  <!-- 添加一个隐藏的input元素用于文件选择 -->
+  <input type="file" id="file-selector" style="display: none;">
+  <script src="script.js"></script>
+</body>
+
+</html>
