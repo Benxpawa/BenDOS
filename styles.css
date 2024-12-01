@@ -1,0 +1,89 @@
+/* 整体DOS控制台样式 */
+.dos-console {
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: black;
+  color: green;
+  font-family: Consolas, monospace;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+/* 控制台头部样式 */
+.console-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+  color: black;
+  padding: 5px 10px;
+}
+
+/* 控制台标题样式 */
+.console-title {
+  font-weight: bold;
+}
+
+/* 控制台控制按钮样式 */
+.console-controls span {
+  margin-left: 5px;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* 红色关闭按钮样式 */
+.console-controls.red {
+  background-color: #ff5f56;
+}
+
+/* 黄色最小化按钮样式 */
+.console-controls.yellow {
+  background-color: #ffbd2e;
+}
+
+/* 绿色最大化按钮样式 */
+.console-controls.green {
+  background-color: #27c93f;
+}
+
+/* 控制台主体部分样式 */
+.console-body {
+  height: calc(100% - 30px); /* 减去头部高度 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 命令输出区域样式 */
+.console-output {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* 命令输入区域样式 */
+.console-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid gray;
+}
+
+.console-input input {
+  flex: 1;
+  background-color: black;
+  border: none;
+  color: green;
+  padding: 5px;
+  outline: none;
+}
+
+.console-input button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
