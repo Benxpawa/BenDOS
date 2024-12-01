@@ -2,6 +2,8 @@
 
 BenDOS，由Benxp无聊发神经仿制DOS操作系统的一个web程序，已支持简单的自定义功能
 
+Bilibili：https://www.bilibili.com/video/BV1hEzdY2Ev1/
+
 当前支持的功能：
 - [x] 修改控制台主题色
         -与Windows系统的cmd中color命令效果/使用方式一致。
