@@ -3,8 +3,8 @@ const commandMap = {};
 
 // 读取command.txt文件内容并解析
 fetch('./commands.txt')
- 。then(response => response.text())
- 。then(text => {
+ .then(response => response.text())
+ .then(text => {
     const lines = text.split('\n');
     lines.forEach(line => {
       const parts = line.split(':');
@@ -15,10 +15,10 @@ fetch('./commands.txt')
       }
     });
   })
- 。catch(error => console.error('Error reading command.txt file:', error));
+ .catch(error => console.error('Error reading command.txt file:', error));
 
 
-document。addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded'， function () {
   const commandInput = document.getElementById('command-input');
   const enterButton = document.getElementById('enter-button');
   const consoleOutput = document.querySelector('.console-output');
@@ -124,30 +124,30 @@ document。addEventListener('DOMContentLoaded', function () {
       '7': 'white',
       '8': 'gray',
       '9': 'lightblue',
-      'A': 'lightgreen',
+      'A': 'lightgreen'，
       'B': 'lightaqua',
       'C': 'lightred',
       'D': 'lightpurple',
       'E': 'lightyellow',
       'F': 'brightwhite'
     };
-    return colors[code.toUpperCase()]? `rgb(${getRGBFromColorName(colors[code.toUpperCase()])})` : null;
+    return colors[code。toUpperCase()]? `rgb(${getRGBFromColorName(colors[code。toUpperCase()])})` : null;
   }
 
   function getRGBFromColorName(colorName) {
     const colorMap = {
       'black': '0,0,0',
       'blue': '0,0,255',
-      'green': '0,128,0',
+      'green': '0,128,0'，
       'lightgreen': '128,255,128',
       'red': '255,0,0',
       'purple': '128,0,128',
       'yellow': '255,255,0',
       'white': '255,255,255',
-      'gray': '128,128,128',
-      'lightblue': '128,128,255',
-      'lightaqua': '128,255,255',
-      'lightred': '255,128,128',
+      'gray': '128,128,128'，
+      'lightblue': '128,128,255'，
+      'lightaqua': '128,255,255'，
+      'lightred': '255,128,128'，
       'lightpurple': '255,128,255',
       'lightyellow': '255,255,128',
       'brightwhite': '255,255,255'
