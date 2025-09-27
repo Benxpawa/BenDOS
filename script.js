@@ -3,8 +3,8 @@ const commandMap = {};
 
 // 读取command.txt文件内容并解析
 fetch('./commands.txt')
- .then(response => response.text())
- .then(text => {
+ 。then(response => response.text())
+ 。then(text => {
     const lines = text.split('\n');
     lines.forEach(line => {
       const parts = line.split(':');
@@ -15,10 +15,10 @@ fetch('./commands.txt')
       }
     });
   })
- .catch(error => console.error('Error reading command.txt file:', error));
+ 。catch(error => console.error('Error reading command.txt file:', error));
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document。addEventListener('DOMContentLoaded', function () {
   const commandInput = document.getElementById('command-input');
   const enterButton = document.getElementById('enter-button');
   const consoleOutput = document.querySelector('.console-output');
@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const newOutputLine = document.createElement('p');
     newOutputLine.textContent = `Return BenDOS\\root\\>${inputCommand}`;
     const resultOutputLine = document.createElement('p');
-    // 将outputMessage中的换行标签替换为HTML中的换行元素，以便正确显示换行效果
     resultOutputLine.innerHTML = outputMessage.replace(/<br>/g, '<br>');
     consoleOutput.appendChild(newOutputLine);
     consoleOutput.appendChild(resultOutputLine);
